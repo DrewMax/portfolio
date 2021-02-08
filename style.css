@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: rgb(185, 205, 224);
+}
+
+/* header style begins */
+header {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url(./photos/pexels-craig-adderley-1563356.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    top: 0;
+}
+.personal-img {
+    background-image: url(./photos/pic1.jpg);
+    width: 100px;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    padding: 0;
+    border-radius: 150px;
+    border: 2px solid black;
+
+}
+.name {
+    font-size: 1rem;
+    color: rgb(212, 8, 8);
+    border-bottom: 3px solid blue;
+    padding: 0 10px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px black;
+}
+header a {
+    text-decoration: none;
+    color: rgb(199, 212, 8);
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5rem; 
+}
+header nav ul li {
+    margin: 0 20px;
+    padding: 10px 15px;
+}
+header nav ul li a:hover {
+    color: red;
+    background-color: rgb(199, 212, 8);
+    border-radius: 15px;
+    padding: 10px;
+    transition: 1.3s;
+}
+.hero-img {
+    background-image: url(./photos/pexels-craig-adderley-1563356.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    padding: 60px;
+}
+.quote {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(230, 47, 23);
+    background-color: rgba(247, 247, 242, 0.7);
+    font-style: oblique;
+
+    
+}
+.quote strong {
+    font-weight: 800;
+}
+
+
+/* footer style starts */
+
+footer {
+    background: rgb(114, 65, 248);
+    width: 100%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+}
+
+/* About style begins */
+
+.heading h2 {
+    font-size: 48px;
+    border-bottom: 6px solid rgb(248, 248, 17);
+    color: #ee1414;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%; 
+    box-shadow: -5px -10px 10px black;
+    border-radius: 15px;
+}
+.skills-heading h3 {
+    font-size: 30px;
+    border-bottom: 6px solid rgb(248, 248, 17);
+    color: #1418ee;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 30%;
+    border-radius: 50px;
+    box-shadow: 5px 10px 10px black; 
+}
+.question {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.question em {
+    color: rgb(91, 167, 66);
+    font-weight: lighter;
+    font-style: italic;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.list ol{
+   line-height: 2rem;
+}
+.list li {
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style-image: ;
+}
+
+/* Work Grid style */
+
+.service-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+.service-grid-item {
+    border: solid;
+    color: black;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box2 {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+}
+.box3 {
+    grid-column: 1/ span 2;
+    grid-row: 3/ span 1;
+} 
+.box1 img, .box2 img, .box3 img {
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+}
+.service-grid-item {
+    transition: 2s;
+   
+}
+.service-grid-item:hover {
+    transform: scale(1.4);
+}
+
+/* contact style start */
+
+.contact-list {
+    margin: 40px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.skills-heading img {
+    background-size: cover;
+    opacity: 0.3;
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+address {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+    .quote {
+        font-size: 1rem;
+    }
+    .heading {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768) {
+    .service-grid-item {
+        
+    }
+}
